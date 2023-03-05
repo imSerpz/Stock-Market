@@ -1,1 +1,1 @@
-Hello and welcome to our Senior Project which is a stock market prediction system
+The aim of this senior project is to develop a stock market prediction model that can accurately forecast the performance of a given stock or portfolio of stocks.The project will explore various models and techniques used in the field of stock market prediction and propose a new model that can outperform existing models. The prediction model will be built using historical stock data and other relevant factors that affect the stock market.
