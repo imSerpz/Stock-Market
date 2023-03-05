@@ -1,0 +1,25 @@
+import pyodbc
+import yfinance as yf
+
+# Connect to SQL Server
+server = 'your_server_name'
+database = 'your_database_name'
+username = 'your_username'
+password = 'your_password'
+driver = '{ODBC Driver 17 for SQL Server}'
+cnxn = pyodbc.connect(f'DRIVER={driver};SERVER={server};DATABASE={database};UID={username};PWD={password}')
+
+# Define a SQL query to insert data into a table
+query = 'INSERT INTO NYSE_data (Symbol, Date, Open, High, Low, Close, Volume) VALUES (?, ?, ?, ?, ?, ?, ?)'
+
+# Get data from Yahoo Finance API
+symbol = 'AAPL' # Replace with the symbol of the stock you want to retrieve data for
+start_date = '2022-01-01' # Replace with the start date of the data you want to retrieve
+end_date = '2022-02-01' # Replace with the end date of the data you want to retrieve
+data = yf.download(symbol, start=start_date, end=end_date)
+
+# Insert data into SQL Server
+cursor = cnxn.cursor()
+for index, row in data.iterrows():
+    cursor.execute(query, symbol, index.date(), row['Open'], row['High'], row['Low'], row['Close'], row['Volume'])
+cnxn.commit()
