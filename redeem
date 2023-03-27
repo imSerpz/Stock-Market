@@ -1,0 +1,43 @@
+###
+Senior Project Stock Market Prediction System
+###
+Project Description
+This senior project aims to predict the stock prices of various companies using Jupyter Notebook and the Yahoo Finance API.
+The project involves the use of various data analysis and machine learning techniques to predict the future prices of stocks.
+###
+The project will involve the following steps:
+###
+Data Collection: Using the Yahoo Finance API to collect stock data for various companies.
+Data Cleaning: Cleaning and preparing the collected data for analysis.
+Data Analysis: Analyzing the data to identify trends and patterns.
+Machine Learning: Developing a machine learning model to predict future stock prices.
+Model Evaluation: Evaluating the accuracy of the developed model.
+###
+Technologies Used
+Jupyter Notebook: A web-based interactive computational environment for creating, editing, and sharing documents containing live code, equations, visualizations and narrative text.
+Yahoo Finance API: A free financial data source that provides access to real-time stock quotes, historical data, and financial news.
+Python: A high-level programming language used for data analysis, machine learning, and web development.
+Pandas: A Python library used for data manipulation and analysis.
+Scikit-learn: A Python library used for machine learning.
+###
+Getting Started
+Prerequisites
+Python 3.6 or above
+Jupyter Notebook
+Pandas
+Scikit-learn
+Yahoo Finance API
+###
+Installation
+Clone the repository.
+Install the required libraries using pip: pip install pandas scikit-learn
+Register for an API key on the Yahoo Finance API website.
+Create a new Jupyter Notebook file and import the necessary libraries.
+Use the API key to access the stock data using the Yahoo Finance API.
+Clean and preprocess the data.
+Analyze the data and identify trends and patterns.
+Develop a machine learning model to predict future stock prices.
+Evaluate the accuracy of the model.
+###
+Authors
+Hibah Agha, Jamie Serpico, Brandon Le, and Devyn Kipphut
